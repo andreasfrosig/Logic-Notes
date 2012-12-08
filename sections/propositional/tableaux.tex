@@ -1,1 +1,49 @@
-\subsection{tableaux}
+\subsection{Tableaux}
+\subsubsection{Rules}
+	\begin{tabular}{m{3cm} m{3cm} }
+	Non-branching rules($\alpha$)  & Branching rules\\
+	$ (\land) \begin{matrix}
+	A\land B:T\\
+	\downarrow\\
+	A:T,B:T
+	\end{matrix} $
+	&$ (\land)  \begin{matrix}
+	A\land B:F\\
+	\swarrow \quad \searrow\\
+	A:F \quad B:F
+	\end{matrix}$\\
+	$ (\lor F) \begin{matrix}
+	A\lor B:F\\
+	\downarrow\\
+	A:F,B:F
+	\end{matrix} $ &
+	$ (\lor T) \begin{matrix}
+	A\lor B:T\\
+	\swarrow \quad \searrow\\
+	A:T\quad B:T
+	\end{matrix} $ \\
+		$ (\to F) \begin{matrix}
+		A\to B:F\\
+		\downarrow\\
+		A:T,B:F
+		\end{matrix} $ &
+		$ (\to T) \begin{matrix}
+		A\to B:T\\
+		\swarrow \quad \searrow\\
+		A:F\quad B:T
+		\end{matrix} $ \\
+		$ (\neg T) 
+		\begin{matrix}
+		\neg A:T\\
+		\downarrow\\
+		A:F
+		\end{matrix} $ &
+		$ (\neg F) 
+		\begin{matrix}
+		\neg A:F\\
+		\downarrow\\
+		A:T
+		\end{matrix} $
+		
+		 
+	\end{tabular}
