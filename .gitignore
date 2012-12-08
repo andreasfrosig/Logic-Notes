@@ -1,2 +1,14 @@
 
 *.rel
+
+*.aux
+
+*.bbl
+
+*.blg
+
+*.idx
+
+*.ilg
+
+*.log
