@@ -1,14 +1,9 @@
-\documentclass[10pt,a4paper]{article}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{fullpage}
-\usepackage{array}
-\begin{document}
-	\subsection{Natural Deduction}
+\subsection{Natural Deduction}
 	\subsubsection{Rules}
+
+
 	{
+\begin{figure}[H]
 	\begin{tabular}{m{3cm} p{4cm} m{3cm} p{4cm}}
 		
 		Introduction rules: & meaning	& Elimination rules & meaning\\ 
@@ -42,6 +37,8 @@
 			\end{matrix}}{A} $ & direct opposed of $ \neg I $
 	
 	\end{tabular}
+
+\end{figure}
 	\subsubsection{Syntax}
 	important notes for syntax:
 	\begin{itemize}
@@ -50,6 +47,8 @@
 		\item name the number of the assumption you neutralize at the right of the fraction line:$$\frac{A}{A\lor B}x $$
 		\item assumptions can be introduced when ever you want, but only removed is a rule allow it ( $ \neg I $ ) and all assumptions must be used in the end($ \to I $)
 	\end{itemize}
- 	
-	 
-\end{document}
+ 
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../../Notes"
+%%% End: 
