@@ -1,0 +1,45 @@
+\subsection{Derived Definitions}
+
+\paragraph{Literal}
+A literal is a propositional constant or variable or its negation. 
+
+
+\paragraph{Elementary disjunction or conjunction}
+Is a disjunction for conjunction of one or more literals.
+
+
+\subsection{Forms}
+
+Every propositional formula is equivalent to a disjunctive normal form and to a conjunctive normal form
+
+\paragraph{Conjunctive normal form (CNF)}
+
+Is a logical propsitional formula where a groups of or'ed literal, is and'ed together. And's outside and Or's inside.
+
+\subparagraph{Examples}
+
+\begin{itemize}
+\item $(p \lor q) \land (\neg p \lor q)$
+\end{itemize}
+
+\paragraph{Disjunctive normal form (DNF)}
+
+Same as CNF but have Or's outside and And's inside.
+
+\subparagraph{Examples}
+
+\begin{itemize}
+\item $(p \land q) \lor (\neg p \land q)$
+\end{itemize}
+
+\paragraph{Algorithm to transform into CNF /DNF}
+
+\begin{itemize}
+\item Eliminate all occurrences of $\leftrightarrow$ and $\to$ using the equivalence  from \ref{equ:notation-prop}.
+\item Transform to negation normal form by using the relevant equivalences. 
+\end{itemize}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../../Notes"
+%%% End: 

@@ -1,0 +1,71 @@
+\section{Propositional  Logic}
+
+\subsection{Definition}
+
+\begin{equation}
+  \label{eq:1}
+  \phi := p \vert \lnot \phi \vert \phi \lor \phi
+\end{equation}
+
+Where $p$ is a propasition. A proposition is logical variable that can hold the values $\ltrue$ or $\lfalse$.
+
+\subparagraph{Examples on propositions}
+
+\begin{itemize}
+\item Your mom is fat!
+\item The Moon is made of cheese!
+\end{itemize}
+
+\paragraph{Rules}
+
+Where $p$ is a propasition.
+
+\begin{equation}
+  \begin{matrix}
+    \lnot \lnot p & \mathbf{iff} &p \\
+  \end{matrix}
+\end{equation}
+
+\paragraph{Derived Notation}
+
+\begin{equation}
+  \label{equ:notation-prop}
+  \begin{matrix}
+   \phi \land \phi & \mathbf{iff} & \lnot ( \lnot \phi \lor \lnot \phi ) \\
+   \phi \to \phi & \mathbf{iff} & \lnot \phi \lor \phi \\ 
+   \phi  \leftrightarrow \phi & \mathbf{iff}& \phi \lor \phi \\ 
+  \end{matrix}
+\end{equation}
+
+
+\paragraph{Recap}
+
+\begin{figure}[H]
+  \centering
+  \begin{tabular}{lcc}
+    \textsc{name} & \textsc{in language} & \textsc{notation} \\\hline
+    negation & not A & $\lnot A$ \\ \hline
+    conjunction & A and B & $A \land B$ \\ \hline
+    disjunction & A or B & $A \lor B$ \\ \hline
+    implication & if A then B & $A \to B$ \\ \hline
+    biconditional & B if and only if A & $A \leftrightarrow B$ \\ \hline
+
+  \end{tabular}
+  \caption{Discription of notation}
+  \label{fig:propositional}
+\end{figure}
+
+\input{sections/propositional/forms}
+
+
+
+\subsection{Deduction Systems}
+
+%\input{sections/natrualdeduction}
+
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../Notes"
+%%% End: 

@@ -1,0 +1,55 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{fullpage}
+\usepackage{array}
+\begin{document}
+	\subsection{Natural Deduction}
+	\subsubsection{Rules}
+	{
+	\begin{tabular}{m{3cm} p{4cm} m{3cm} p{4cm}}
+		
+		Introduction rules: & meaning	& Elimination rules & meaning\\ 
+		$ \left( \land I\right) \frac{A,B}{A\land B} $ & \normalsize if we have concluded A and B separately vi can conclude A and B	& $\left( \land E\right) \frac{A \land B}{A}, \frac{A \land B}{B} $ & \normalsize if we have B and A we know A must be true  \\[1cm]  
+		\hline
+		$ \left( \lor I\right) \frac{A}{A\lor B} , \frac{B}{A\lor B} $ & \normalsize if we have A we can introduce B & $(\lor E) \frac{A \lor B \begin{matrix}
+			[A] & [B]  \\
+			\vdots & \vdots  \\
+			C & C
+			\end{matrix}}{C} $ & \normalsize If by assuming A and B both can derive C and we know that A or B is true we can conclude C
+		
+		\\[1cm]
+		\hline
+		$(\to I) \frac{\begin{matrix}
+			[A]  \\
+			\vdots   \\
+			B 
+			\end{matrix}}{A\to B} $ & \normalsize if we by assuming A gets a B we can conclude that A implies B & $ (\to E) \frac{A,A\to B}{B} $ & if we know A an that A implies B we can conclude B \\[1cm] 
+		\hline
+		$ (\neg I) \frac{\begin{matrix}
+			[\neg A]  \\
+			\vdots   \\
+			\bot 
+			\end{matrix}}{\neg A} $ & \normalsize if we assume A and reaches a falsum we can conclude that A is not the case & $ (\neg E) \frac{A,\neg A}{\bot} $ & if we reach a A and $ \neg $A we can conclude a falsum\\[1cm]
+		\hline
+		Ex falsum quodlibet & & Reductio ad absurdum:\\ 
+		$ (\bot ) \frac{\bot}{A} $ & from a falsum anything can be derived & $ (RA) \frac{\begin{matrix}
+			[\neg A]  \\
+			\vdots   \\
+			\bot 
+			\end{matrix}}{A} $ & direct opposed of $ \neg I $
+	
+	\end{tabular}
+	\subsubsection{Syntax}
+	important notes for syntax:
+	\begin{itemize}
+		\item $ []^x $ around assumptions where x is the number of the assumption
+		\item name of the rule used at the left og the fraction line; $$ \left( \lor I\right) \frac{A}{A\lor B} $$
+		\item name the number of the assumption you neutralize at the right of the fraction line:$$\frac{A}{A\lor B}x $$
+		\item assumptions can be introduced when ever you want, but only removed is a rule allow it ( $ \neg I $ ) and all assumptions must be used in the end($ \to I $)
+	\end{itemize}
+ 	
+	 
+\end{document}
